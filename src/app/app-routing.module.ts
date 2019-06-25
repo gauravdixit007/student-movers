@@ -4,8 +4,9 @@ import { EmployeesListComponent } from './employees-list/employees-list.componen
 import { JobsListComponent } from './jobs-list/jobs-list.component';
 
 const routes: Routes = [
-  {path: 'employees', component: EmployeesListComponent},
-  {path: 'jobs', component: JobsListComponent}
+  {path: 'employees/:id', component: EmployeesListComponent},
+  {path: 'jobs', component: JobsListComponent},
+  {path: '**' , component: JobsListComponent}
 ];
 
 @NgModule({

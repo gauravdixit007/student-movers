@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+html{
+  margin: 20px;
+}
+
+.heading{
+   color: white;
+   text-align: center;
+   background-color: #365776;
+   padding: 20px;
+}
+
+.main-container{
+  background-color: #DCDDDF;
+  padding-bottom: 20px;
+}
+
+.main-heading{
+    font-weight: bold;
+}
+
+.secondary-heading{
+
+}
+
+.job-card{
+    border: solid 1px #BBBBBB;
+    border-radius: 10px;
+    box-shadow: 0 0 10px;
+    margin: 20px;
+    color: #AAAAAA;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
+#jobs-list-header .row{
+   padding-top: 20px;
+   padding-bottom: 10px;
+}
+
+#jobs-list-header span{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.job-card .name{
+     border-right: solid 1px;
+}
+
+.job-card .address{
+     color: #666666;
+}
+
+.location-icon{
+    color: #F0DE90;
+}

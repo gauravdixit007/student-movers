@@ -1,3 +1,61 @@
-<p>
-  jobs-list works!
-</p>
+
+<label>JobSearch</label>
+<div class="main-container">
+  <div id="jobs-list-header">
+      <div class="heading container-fluid">
+
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+
+            <div class="col-sm-8">
+              <h3 class="main-heading">Student Movers Service</h3>
+              <h4 class="secondary-heading">WE MAJOR IN MOVING</h4>
+            </div>
+
+            <div class="col-sm-2">
+                <i class="fa fa-bars"></i>
+            </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="input-group">
+                  <i class="glyphicon glyphicon-search"></i>
+                  <input type="text" class="form-control" placeholder="Search Job">
+              </div>
+          </div>
+        </div>
+
+        <div class="row top-padding">
+            <div class="col-sm-6">
+                <span class="pull-left"><h4>Showing Today's Jobs</h4></span>
+              </div>
+              <div class="col-sm-6">
+                <span class="pull-right"><h4>{{today | date: 'mediumDate'}}</h4></span>
+              </div>
+        </div>
+
+      </div>
+
+
+  </div>
+
+
+  <div class="row job-card" *ngFor="let job of jobsList; let i = index">
+      <div class="col-sm-4 name">
+          <h3>{{job.name}}</h3>
+      </div>
+      <div class="col-sm-2 location-icon">
+          <i class="fa fa-2x pull-right fa-map-marker yellow" aria-hidden="true"></i>
+      </div>
+      <div class="col-sm-6 address">
+          <h4>{{job.address}}</h4>
+      </div>
+  </div>
+
+
+</div>
+
