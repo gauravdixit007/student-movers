@@ -1,15 +1,91 @@
-<p>
-  employees-list works!
-</p>
 
-<div class="row">
-  <div class="col-sm-4">
-     Column 1
+<label>HoursInput</label>
+<div class="main-container">
+  <div id="employee-list-header">
+      <div class="heading container-fluid">
+
+        <div class="row">
+            <div class="col-sm-2">
+
+                <i class="fa fa-2x fa-arrow-left" aria-hidden="true"></i>
+            </div>
+
+            <div class="col-sm-8">
+              <h3 class="main-heading">Employees List</h3>
+            </div>
+
+            <div class="col-sm-2">
+                <i class="fa fa-2x fa-bars"></i>
+            </div>
+
+        </div>
+
+        <div class="row margin-top-element">
+                <div class="col-sm-4 name">
+                    <h3>{{job.name}}</h3>
+                </div>
+                <div class="col-sm-2 location-icon">
+                    <i class="fa fa-2x pull-right fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="col-sm-6 address">
+                    <h5>{{job.address}}</h5>
+                </div>
+        </div>
+
+
+      </div>
+
+
   </div>
-  <div class="col-sm-4">
-     Column 2
+
+
+  <div class="employee-card" *ngFor="let employee of job.employees; let i = index;">
+    <div class="row">
+        <div class="col-sm-8">
+            <h3>{{employee.name}}</h3>
+            <div>{{employee.phone}}</div>
+        </div>
+        <div class="col-sm-4 vertical-align">
+            <input *ngIf="employee.open" type="button" class="pull-right btn-rounded" value="Done" />
+            <a *ngIf="!employee.open" data-ng-click="" class="add-hours"><span>+ Hours</span></a>
+        </div>
+
+    </div>
+
+    <hr/>
+    <div class="row">
+      <div class="col-sm-4">
+          Hours
+      </div>
+
+      <div class="col-sm-8">
+        <div class="hours pull-right">
+          <i class="fa fa fa-plus"></i>
+          <span>{{3.5}}</span>
+          <i class="fa fa fa-minus"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <hr/>
+    <div class="row">
+      <div class="col-sm-12">
+          He is a driver ?
+      </div>
+    </div>
+    <div class="row driver-no-driver">
+      <div class="col-sm-6 driver">
+        Driver
+      </div>
+      <div class="col-sm-6 not-driver">
+        Not Driver
+      </div>
+
+    </div>
+
+
   </div>
-  <div class="col-sm-4">
-     Column 3
-  </div>
+
 </div>
+

@@ -35,6 +35,18 @@ html{
     padding-bottom: 10px;
 }
 
+.employee-card{
+  border: solid 1px #BBBBBB;
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  margin: 20px;
+  padding: 20px;
+  color: #AAAAAA;
+  background: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .pull-left{
   float: left;
 }
@@ -53,14 +65,100 @@ html{
   padding-right: 5px;
 }
 
-.job-card .name{
-     border-right: solid 1px;
+.name{
+     border-right: solid 2px;
 }
 
-.job-card .address{
+.address{
      color: #666666;
 }
 
 .location-icon{
     color: #F0DE90;
+}
+
+#employee-list-header .address{
+    color: white;
+}
+
+.margin-top-element{
+    margin-top: 20px;
+}
+
+.margin-bottom-element{
+    margin-bottom: 20px;
+}
+
+.btn-rounded{
+  border: solid 0px;
+  border-radius: 20px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  background-color: #057dad;
+}
+
+.driver{
+  background: #057dad;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+.not-driver{
+  text-align: center;
+  padding: 20px;
+  border: solid 3px #057dad;
+  border-left: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.driver-no-driver{
+    padding: 15px;
+}
+
+
+.hours span{
+  font-size: 24px
+}
+
+.hours i, span{
+   padding: 5px;
+   margin-left: 5px;
+   margin-right: 5px;
+}
+
+.hours i{
+    font-size: 16px;
+    border: solid 3px;
+    border-radius: 16px;
+}
+
+.fa-plus{
+    color: green;
+}
+
+.fa-minus{
+   color: red;
+}
+
+.add-hours{
+  border: solid 2px green;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  color: green;
+}
+
+.vertical-align{
+  vertical-align: middle;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.add-hours span{
+    color: green;
 }
