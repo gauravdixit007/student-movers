@@ -1,0 +1,10 @@
+
+span.hours-disp{
+  display: inline-block;
+  text-align: center;
+  width: 60px;
+}
+
+a#back{
+  color: white;
+}

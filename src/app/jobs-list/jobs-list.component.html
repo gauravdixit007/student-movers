@@ -29,10 +29,10 @@
         </div>
 
         <div class="row top-padding">
-            <div class="col-sm-6">
+            <div class="col-sm-8">
                 <span class="pull-left"><h4>Showing Today's Jobs</h4></span>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-4">
                 <span class="pull-right"><h4>{{today | date: 'mediumDate'}}</h4></span>
               </div>
         </div>
@@ -42,17 +42,20 @@
 
   </div>
 
-
-  <div class="row job-card" *ngFor="let job of jobsList; let i = index">
-      <div class="col-sm-4 name">
-          <h3>{{job.name}}</h3>
-      </div>
-      <div class="col-sm-2 location-icon">
-          <i class="fa fa-2x pull-right fa-map-marker" aria-hidden="true"></i>
-      </div>
-      <div class="col-sm-6 address">
-          <h5>{{job.address}}</h5>
-      </div>
+  <div *ngFor="let job of jobsList; let i = index">
+    <a routerLink="/employees/{{job.id}}">
+        <div class="row job-card">
+          <div class="col-sm-4 name">
+              <h3>{{job.name}}</h3>
+          </div>
+          <div class="col-sm-2 location-icon">
+              <i class="fa fa-2x pull-right fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="col-sm-6 address">
+              <h5>{{job.address}}</h5>
+          </div>
+        </div>
+    </a>
   </div>
 
 
