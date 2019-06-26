@@ -148,7 +148,7 @@ export class EmployeesListComponent implements OnInit {
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {
       this.id = +params['id']; // (+) converts string 'id' to a number
-      this.job = this.jobs[ this.id + 1 ] ;
+      this.job = this.jobs[ this.id - 1 ] ;
       // In a real app: dispatch action to load the details here.
    });
   }

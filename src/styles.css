@@ -20,38 +20,12 @@ html{
     font-weight: bold;
 }
 
-.secondary-heading{
-
-}
-
-.employee-card{
-  border: solid 1px #BBBBBB;
-  border-radius: 10px;
-  box-shadow: 0 0 10px;
-  margin: 20px;
-  padding: 20px;
-  color: #AAAAAA;
-  background: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .pull-left{
   float: left;
 }
 
 .pull-right{
   float: right;
-}
-
-#jobs-list-header .row{
-   padding-top: 20px;
-   padding-bottom: 10px;
-}
-
-#jobs-list-header span{
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .name{
@@ -64,10 +38,6 @@ html{
 
 .location-icon{
     color: #F0DE90;
-}
-
-#employee-list-header .address{
-    color: white;
 }
 
 .margin-top-element{
